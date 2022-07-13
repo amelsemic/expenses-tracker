@@ -51,6 +51,7 @@ const ExpenseForm = (props) => {
             type="text"
             value={enteredTitle}
             onChange={titleChangeHandler}
+            maxLength="35"
           />
         </div>
         <div className="new-expense__control">
@@ -58,6 +59,7 @@ const ExpenseForm = (props) => {
           <input
             type="number"
             min="0.01"
+            max="1000000"
             step="0.01"
             value={enteredAmount}
             onChange={amountChangeHandler}
