@@ -48,6 +48,7 @@ const ExpenseForm = (props) => {
         <div className="new-expense__control">
           <label>Title</label>
           <input
+            required
             type="text"
             value={enteredTitle}
             onChange={titleChangeHandler}
@@ -57,6 +58,7 @@ const ExpenseForm = (props) => {
         <div className="new-expense__control">
           <label>Amount</label>
           <input
+            required
             type="number"
             min="0.01"
             max="1000000"
